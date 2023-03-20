@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edusogno</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    
+    
+
+    <header>
+        <img src="./assets/img/logo.PNG" alt="logo">
+    </header>
+    <main>
+        <h2>Crea il tuo account</h2>
+        <div class="card-form">
+            <form action="php/register.php" method="POST">
+                <label for="nome">inserisci il nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Mario" required>
+        
+                <label for="cognome">inserisci il cognome:</label>
+                <input type="text" name="cognome" id="cognome" placeholder="Rossi" required>
+        
+                <label for="email">inserisci l'email:</label>
+                <input type="email" name="email" id="email" placeholder="name@example.com" required>
+        
+                <label for="password">inserisci la password:</label>
+                <input type="password" name="password" id="password" placeholder="Scrivila qui" required>
+        
+                <button type="submit" class="submit">Registrati</button>
+
+                <a href="./login.html">hai gia un account? <strong>Accedi</strong></a>
+            </form>
+            
+        </div>
+        
+    </main>
+</body>
+
+</html>
