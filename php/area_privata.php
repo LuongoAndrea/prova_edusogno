@@ -28,29 +28,33 @@ if (!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true) {
         <h2>
             <?php echo "Ciao " . $_SESSION["nome"]; ?> ecco i tuoi eventi
         </h2>
-        <?php
-        $sql_select = "SELECT * FROM eventi";
-        $result = $connessione->query($sql_select);
-        if ($result->num_rows > 0) {
-            while ($row = $result->fetch_assoc()) {
-                $nome = $row["nome_evento"];
-                $data = $row["data_evento"];
-                ?>
-                <div class="card_evento">
-                    <h3>
-                        <?php echo $nome ?>
-                    </h3>
-                    <span>
-                        <?php echo $data ?>
-                    </span>
-                    <button>Join</button>
-                </div>
-                <?php
+        <div class="eventi">
+            <?php
+            $sql_select = "SELECT * FROM eventi";
+            $result = $connessione->query($sql_select);
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    $nome = $row["nome_evento"];
+                    $data = date('d-m-Y H:i', strtotime($row['data_evento']));
+                    ?>
+                    <div class="card_evento">
+                        <h3>
+                            <?php echo $nome ?>
+                        </h3>
+                        <span>
+                            <?php echo $data ?>
+                        </span>
+                        <button class="submit">Join</button>
+                    </div>
+                    <?php
+                }
+            } else {
+                echo "Nessun risultato trovato.";
             }
-        } else {
-            echo "Nessun risultato trovato.";
-        }
-        ?>
+            ?>
+
+        </div>
+
 
         </div>
 

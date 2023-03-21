@@ -20,11 +20,11 @@ header{
 header img{
     width: 123.14px;
 }
-main{
+/* main{
     display: flex;
     justify-content: center;
-    padding-top: 10%;
-}
+    flex-direction: column;
+} */
 .card-form{
     position: absolute;
     top: 50%;
@@ -78,7 +78,7 @@ a{
 }
 h2{
     position: relative;
-    top: -25px;
+    top: 15px;
     text-align: center;
     font-style: normal;
     font-weight: 700;
@@ -87,7 +87,44 @@ h2{
     text-align: center;
     color: #134077;
 }
+.eventi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.card_evento{
+ margin: 10px;
+ padding: 20px;
+background-color: #FFFFFF;
+border-radius: 20px;
+border: 1px solid #134077
+}
+.card_evento *{
+    margin: 5px
+   }
+.card_evento span{
+    font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 99.5%;
+/* identical to box height, or 20px */
 
+
+color: #CCCCCC;
+}
+.card_evento h3{
+    font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 99.5%;
+/* identical to box height, or 36px */
+
+text-align: center;
+}
 /* .cerchio-destra{
     position: absolute;
     width: 181px;
