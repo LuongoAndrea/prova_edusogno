@@ -2,29 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font */
     font-family: 'DM Sans';
+    font-style: normal;
 }
+/* dody */
 body{
     background-color: #D9E5F3;
     overflow: hidden;
 }
+/* header */
 header{
     background-color: #FFFFFF;
     width: 100%;
     height: 127px;
     border-radius: 0 0 10px 10px;
     padding: 40px 0 0 40px;
-
+    box-shadow: 0px 4px 18px -6px #0057FF;
 
 }
+/* logo */
 header img{
     width: 123.14px;
 }
-/* main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-} */
+/* card dei form */
 .card-form{
     position: absolute;
     top: 50%;
@@ -34,17 +35,19 @@ header img{
     padding: 20px;
     width: 40%;
     border-radius: 20px;
-border: 1px solid #134077;
+    border: 1px solid #134077;
+    z-index: 2000;
 
 }
+
 form{
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
+
 label{
     margin-top: 10px;
-    font-style: normal;
     font-weight: 700;
     font-size: 13px;
     line-height: 99.5%;
@@ -55,14 +58,13 @@ input{
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 99.5%;
     color: #231F20;
-
-
 }
+
+/* bottone */
 button.submit{
     width: 100%;
     color: #FFFFFF;
@@ -75,6 +77,7 @@ button.submit{
     border: none;
     cursor: pointer;
 }
+/* bottone reimposta password */
 .reimposta_password{
     margin-bottom: 20px;
     padding: 10px;
@@ -87,21 +90,23 @@ button.submit{
     border: none;
     cursor: pointer;
 }
+/* link */
 a{
     margin: 20px;
     text-align: center;
 }
+/* sottotitolo */
 h2{
     position: relative;
     top: 15px;
     text-align: center;
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 99.5%;
     text-align: center;
     color: #134077;
 }
+/* contenitore delle card eventi */
 .eventi{
     position: absolute;
     top: 50%;
@@ -111,82 +116,126 @@ h2{
     justify-content: center;
     width: 80%;
 }
+/* card evento singolo */
 .card_evento{
- margin: 10px;
- padding: 20px;
-background-color: #FFFFFF;
-border-radius: 20px;
-border: 1px solid #134077;
+    margin: 10px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid #134077;
+    z-index: 2000;
 }
+/* tutti gli elementi interni alla card evento */
 .card_evento *{
-    margin: 5px
-   }
-.card_evento span{
-    font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 99.5%;
-/* identical to box height, or 20px */
-
-
-color: #CCCCCC;
+    margin: 5px;
 }
+/* titolo evento */
 .card_evento h3{
-    font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 99.5%;
-/* identical to box height, or 36px */
-
-text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 99.5%;
+    text-align: center;
 }
-/* .cerchio-destra{
+/* orario evento */
+.card_evento span{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 99.5%;
+    color: #CCCCCC;
+}
+
+/* immagini nella section  */
+section{
+    width: 100%;
+}
+/* cerchi */
+.cerchio-piccolo{
     position: absolute;
     width: 181px;
     height: 181px;
-    left: 1226px;
+    left: 1400px;
     top: 444px;
     z-index: 1000;
 }
-.cerchio-sinistra{
+.cerchio-grosso{
     position: absolute;
     width: 358px;
     height: 358px;
     left: 0px;
     top: 318px;
-
- 
     z-index: 1000;
 }
-.vector-5{
+/* onde */
+.onda3{
     position: absolute;
-    width: 2961px;
+    width: 100vw;
     height: 226px;
-    left: 2459px;
-    top: 704px;
-
-    background: #B8CCE4;
+    left: 0vw;
+    bottom: 10vw;
     transform: matrix(-1, 0, 0, 1, 0, 0);
     z-index: 800;
 }
-.vector-4{
+.onda3 img{
+    width: 100%;
+}
+.onda2{
     position: absolute;
-    width: 1557.84px;
+    width: 110vw;
     height: 470.33px;
-    left: -44.78px;
-    top: 549.03px;
-
-    background: #CBDAEC;
-    transform: rotate(9.29deg);
+    left: -5vw;
+    bottom: 3vw;
+    transform: rotate(0deg);
     z-index: 900;
 }
-.vector-1{
+.onda2 img{
+    width: 100%;
+}
+.onda1{
     position: absolute;
-    width: 1544px;
+    width: 100vw;
     height: 152px;
-    left: -37px;
-    top: 896px;
-
-    background: #FFFFFF;
+    left: 0;
+    bottom: 0;
     z-index: 1000;
-} */
+}
+.onda1 img{
+ width: 100%;
+}
+/* razzo */
+.razzo{
+    position: absolute;
+    width: 111px;
+    height: 185px;
+    right: 20vw;
+    bottom: 10vw;
+    z-index: 1100;
+}
+.punta{
+    position: relative;
+    top: 85px;
+    left: 39px
+}
+.corpo{
+    position: relative;
+    top: 80px;
+    left: 40px;
+}
+.ala-sinistra{
+    position: relative;
+    top:65px;
+    left: 21px;
+}
+.ala-destra img{
+    position: relative;
+    left: 101px;
+}
+.ala-centro{
+    position: relative;
+    left: 70px;
+    bottom: 61px;
+}
+.oblo{
+    position: relative;
+    left: 59px;
+    bottom: 180px;
+}
