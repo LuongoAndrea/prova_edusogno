@@ -23,6 +23,8 @@ if (!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true) {
 <body>
     <header>
         <img src="./../assets/img/logo.PNG" alt="logo">
+        <a href="reimposta_password.html"><button class="reimposta_password">Reimposta
+                password</button></a>
     </header>
     <main>
         <h2>
@@ -53,10 +55,6 @@ if (!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true) {
             }
             ?>
 
-        </div>
-
-
-        </div>
 
     </main>
 

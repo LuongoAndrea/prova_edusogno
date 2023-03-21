@@ -34,6 +34,8 @@ header img{
     padding: 20px;
     width: 40%;
     border-radius: 20px;
+border: 1px solid #134077;
+
 }
 form{
     display: flex;
@@ -71,6 +73,19 @@ button.submit{
     border-radius: 11px;
     padding: 10px 0 10px 0;
     border: none;
+    cursor: pointer;
+}
+.reimposta_password{
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 15px;
+    background: #006eff;
+    border-radius: 11px;
+    padding: 10px 0 10px 0;
+    border: none;
+    cursor: pointer;
 }
 a{
     margin: 20px;
@@ -101,7 +116,7 @@ h2{
  padding: 20px;
 background-color: #FFFFFF;
 border-radius: 20px;
-border: 1px solid #134077
+border: 1px solid #134077;
 }
 .card_evento *{
     margin: 5px
