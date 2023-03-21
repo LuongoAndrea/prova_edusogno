@@ -14,3 +14,6 @@ if ($connessione->query($sql) === true) {
     echo "errore";
 }
 ?>
+
+<!-- $2y$10$sab9L/g.wzXTcbY3Vv6Bx.HYXs6ztQnjHp45ftsLHsOH0nqehyz5e
+suca@gmail.com -->
